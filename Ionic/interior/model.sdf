@@ -7,7 +7,7 @@
           <cast_shadows>false</cast_shadows>
           <geometry>
             <mesh>
-              <uri>meshes/Ionic.glb</uri>
+              <uri>meshes/Ionic.gltf</uri>
             </mesh>
           </geometry>
 
