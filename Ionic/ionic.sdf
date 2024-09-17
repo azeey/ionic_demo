@@ -21,19 +21,19 @@
       </plugin>
 
       <!-- Plugins that add functionality to the scene -->
-      <plugin filename="GlobalIlluminationVct" name="GI">
-        <gz-gui>
-          <property type="string" key="state">docked_collapsed</property>
-        </gz-gui>
-        <enabled>true</enabled>
-        <highQuality>true</highQuality>
-        <resolution>16 16 16</resolution>
-        <octantCount>1 1 1</octantCount>
-        <conserveMemory>true</conserveMemory>
-        <thinWallCounter>1.0</thinWallCounter>
-        <anisotropic>true</anisotropic>
-        <bounceCount>6</bounceCount>
-      </plugin>
+      <!-- <plugin filename="GlobalIlluminationVct" name="GI"> -->
+      <!--   <gz-gui> -->
+      <!--     <property type="string" key="state">docked_collapsed</property> -->
+      <!--   </gz-gui> -->
+      <!--   <enabled>true</enabled> -->
+      <!--   <highQuality>true</highQuality> -->
+      <!--   <resolution>16 16 16</resolution> -->
+      <!--   <octantCount>1 1 1</octantCount> -->
+      <!--   <conserveMemory>true</conserveMemory> -->
+      <!--   <thinWallCounter>1.0</thinWallCounter> -->
+      <!--   <anisotropic>true</anisotropic> -->
+      <!--   <bounceCount>6</bounceCount> -->
+      <!-- </plugin> -->
       <plugin filename="EntityContextMenuPlugin" name="Entity context menu">
         <gz-gui>
           <property key="state" type="string">floating</property>
@@ -282,7 +282,7 @@
     </plugin>
 
     <scene>
-      <ambient>0 0 0</ambient>
+      <ambient>0.0 .0 0.0</ambient>
       <grid>false</grid>
       <sky></sky>
     </scene>
@@ -301,65 +301,65 @@
       <cast_shadows>true</cast_shadows>
     </light>-->
 
-    <light type="spot" name="spot_grid">
-      <pose>-1 0.5 2.75 0 0 0</pose>
-      <diffuse>1 1 1 1</diffuse>
-      <specular>1 1 1 1</specular>
-      <intensity>0.75</intensity>
-      <attenuation>
-        <range>12</range>
-        <linear>0.01</linear>
-        <constant>0.2</constant>
-        <quadratic>0.0</quadratic>
-      </attenuation>
-      <direction>0 0 -1</direction>
-      <spot>
-        <inner_angle>0</inner_angle>
-        <outer_angle>3</outer_angle>
-        <falloff>1</falloff>
-      </spot>
-      <cast_shadows>true</cast_shadows>
-    </light>
-
-    <light type="spot" name="spot_middle">
-      <pose>4 1.8 2.5 0 0 0</pose>
-      <diffuse>1 1 1 1</diffuse>
-      <specular>1 1 1 1</specular>
-      <intensity>0.75</intensity>
-      <attenuation>
-        <range>12</range>
-        <linear>0.01</linear>
-        <constant>0.2</constant>
-        <quadratic>0.0</quadratic>
-      </attenuation>
-      <direction>0 0 -1</direction>
-      <spot>
-        <inner_angle>0</inner_angle>
-        <outer_angle>3</outer_angle>
-        <falloff>1</falloff>
-      </spot>
-      <cast_shadows>true</cast_shadows>
-    </light>
-
-    <light type="spot" name="spot_longtable">
-      <pose>9 1 2.75 0 0 0</pose>
-      <diffuse>1 1 1 1</diffuse>
-      <specular>1 1 1 1</specular>
-      <intensity>0.75</intensity>
-      <attenuation>
-        <range>12</range>
-        <linear>0.01</linear>
-        <constant>0.2</constant>
-        <quadratic>0.0</quadratic>
-      </attenuation>
-      <direction>0 0 -1</direction>
-      <spot>
-        <inner_angle>0</inner_angle>
-        <outer_angle>3</outer_angle>
-        <falloff>1</falloff>
-      </spot>
-      <cast_shadows>true</cast_shadows>
-    </light>
+    <!-- <light type="spot" name="spot_grid"> -->
+    <!--   <pose>-1 0.5 2.75 0 0 0</pose> -->
+    <!--   <diffuse>1 1 1 1</diffuse> -->
+    <!--   <specular>1 1 1 1</specular> -->
+    <!--   <intensity>0.75</intensity> -->
+    <!--   <attenuation> -->
+    <!--     <range>12</range> -->
+    <!--     <linear>0.01</linear> -->
+    <!--     <constant>0.2</constant> -->
+    <!--     <quadratic>0.0</quadratic> -->
+    <!--   </attenuation> -->
+    <!--   <direction>0 0 -1</direction> -->
+    <!--   <spot> -->
+    <!--     <inner_angle>0</inner_angle> -->
+    <!--     <outer_angle>3</outer_angle> -->
+    <!--     <falloff>1</falloff> -->
+    <!--   </spot> -->
+    <!--   <cast_shadows>true</cast_shadows> -->
+    <!-- </light> -->
+    <!---->
+    <!-- <light type="spot" name="spot_middle"> -->
+    <!--   <pose>4 1.8 2.5 0 0 0</pose> -->
+    <!--   <diffuse>1 1 1 1</diffuse> -->
+    <!--   <specular>1 1 1 1</specular> -->
+    <!--   <intensity>0.75</intensity> -->
+    <!--   <attenuation> -->
+    <!--     <range>12</range> -->
+    <!--     <linear>0.01</linear> -->
+    <!--     <constant>0.2</constant> -->
+    <!--     <quadratic>0.0</quadratic> -->
+    <!--   </attenuation> -->
+    <!--   <direction>0 0 -1</direction> -->
+    <!--   <spot> -->
+    <!--     <inner_angle>0</inner_angle> -->
+    <!--     <outer_angle>3</outer_angle> -->
+    <!--     <falloff>1</falloff> -->
+    <!--   </spot> -->
+    <!--   <cast_shadows>true</cast_shadows> -->
+    <!-- </light> -->
+    <!---->
+    <!-- <light type="spot" name="spot_longtable"> -->
+    <!--   <pose>9 1 2.75 0 0 0</pose> -->
+    <!--   <diffuse>1 1 1 1</diffuse> -->
+    <!--   <specular>1 1 1 1</specular> -->
+    <!--   <intensity>0.75</intensity> -->
+    <!--   <attenuation> -->
+    <!--     <range>12</range> -->
+    <!--     <linear>0.01</linear> -->
+    <!--     <constant>0.2</constant> -->
+    <!--     <quadratic>0.0</quadratic> -->
+    <!--   </attenuation> -->
+    <!--   <direction>0 0 -1</direction> -->
+    <!--   <spot> -->
+    <!--     <inner_angle>0</inner_angle> -->
+    <!--     <outer_angle>3</outer_angle> -->
+    <!--     <falloff>1</falloff> -->
+    <!--   </spot> -->
+    <!--   <cast_shadows>true</cast_shadows> -->
+    <!-- </light> -->
 
     <!--<light type="point" name="point">
       <pose>-1 0.5 4 0 0 0</pose>
